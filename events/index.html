@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Prevent flash of wrong theme -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme-preference') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <meta name="description"
+        content="Event based vision by Nicolas Mastropasqua: Microexpression detection, liveness detection, and facial analysis using event-based cameras.">
+    <meta name="keywords"
+        content="Nicolas Mastropasqua Event Cameras, Nicolas Mastropasqua Neuromorphic, Nicolas Mastropasqua Doctorado, Nicolas Mastropasqua PhD, Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Daniel Acevedo, Action Unit recognition, Event-based Vision,  Microexpression recognition, Face analysis, Face Recognition, Driver Monitoring Systems, DMS, Event-based Face Analysis, Neuromorphic Cameras">
+    <title>Nicolas Mastropasqua | Event-based Vision</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/static/icons/favicon.png?v=2026-08-17" type="image/png" sizes="32x32">
+    <link rel="icon" href="/static/icons/favicon.ico?v=2026-08-17" sizes="any">
+    <link rel="apple-touch-icon" href="/static/icons/favicon.png?v=2026-08-17">
+    <link rel="canonical" href="https://nicomastro.github.io/events/">
+    <meta name="robots" content="index,follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nicolas Mastropasqua | Event-based Vision">
+    <meta property="og:description"
+        content="Event-based vision by Nicolas Mastropasqua: Microexpression detection, liveness detection, and facial analysis using event-based cameras.">
+    <meta property="og:url" content="https://nicomastro.github.io/events/">
+    <meta property="og:image" content="https://nicomastro.github.io/static/images/Headshot_Square_Background.jpg">
+    <meta property="og:site_name" content="Nicolas Mastropasqua | Event-based Vision">
+    <meta property="og:locale" content="en_US">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://nicomastro.github.io/events/",
+        "url": "https://nicomastro.github.io/events/",
+        "name": "Nicolas Mastropasqua | Event-based Vision",
+        "description": "Event-based vision by Nicolas Mastropasqua: Microexpression detection, liveness detection, and facial analysis using event-based cameras.",
+        "image": "https://nicomastro.github.io/static/images/Headshot_Square_Background.jpg",
+        "about": { "@id": "https://nicomastro.github.io/#person" },
+        "isPartOf": { "@id": "https://nicomastro.github.io/" }
+    }
+    </script>
+
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://api.github.com" crossorigin>
+    <link rel="preconnect" href="https://api.semanticscholar.org" crossorigin>
+
+    <link rel="stylesheet" href="/static/stylesheets/styles.css?v=2026-08-17">
+    <link rel="stylesheet" href="/static/stylesheets/zoom_containers.css?v=2026-08-17">
+    <link rel="stylesheet" href="/static/stylesheets/css/academicons.min.css?v=2026-08-17">
+    <link rel="stylesheet" href="/static/stylesheets/icons.css?v=2026-08-17">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script defer src="/static/js/theme-switcher.js?v=2026-08-17"></script>
+    <script defer src="/static/js/pdf-modal.js?v=2026-08-17"></script>
+    <script defer src="/static/js/image-modal.js?v=2026-08-17"></script>
+    <script defer src="/static/js/video_comparison.js?v=2026-08-17"></script>
+    <script defer src="/static/js/zoom-containers.js?v=2026-08-17"></script>
+    <script defer src="/static/js/github-stars.js?v=2026-08-17"></script>
+    <script defer src="/static/js/semantic-scholar.js?v=2026-08-17"></script>
+    <script defer src="/static/js/new-tabs.js?v=2026-08-17"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5MJTNBEPMB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5MJTNBEPMB');
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- HEADER -->
+        <div data-component="header" data-selected="events"></div>
+
+        <section>
+            <!-- INTRODUCTION -->
+            <h1>Event-based Research</h1>
+            <p>
+                Accurately capturing subtle and fast facial movements remains difficult when relying solely on RGB cameras, due to limitations in temporal resolution and sensitivity to motion blur among other factors. 
+                Event cameras offer a promising alternative, with microsecond-level precision, high dynamic range, and low latency.
+                In my research, I focus on analyzing facial and ocular dynamics relevant to driver state monitoring, including tasks such as eye tracking and facial expression analysis.
+                
+            </p>
+         
+            <p>
+                 
+                                
+                                
+                My research is conducted within the <a href="https://imagenesvision.github.io/LIV/">Laboratorio de Imagen, Vision y Sistemas Inteligentes (LIVSI)</a> at <a href="https://icc.fcen.uba.ar/">Instituto de Ciencias de la Computación (CONICET-UBA)</a> advised by Professor <a href="https://scholar.google.com/citations?hl=es&user=1Yv2P6oAAAAJ">Daniel Acevedo</a>, and alongside Professor <a href="https://scholar.google.com/citations?user=bMnUgmcAAAAJ&hl">Pablo Negri</a>, and Professor <a href="https://scholar.google.com/citations?user=RAmWudUAAAAJ&hl=es">Maria Elena Buemi</a>. 
+                I collaborate with <a href="https://rodrigo.verschae.org/">Professor Rodrigo Verschae</a> from The Iniciativa de Datos e Inteligencia Artificial, University of Chile, Santiago, Chile and  <a href="https://ibugueno.github.io/">Ignacio Bugueno-Cordova</a> from Institute of Engineering Sciences, Universidad de O’Higgins, Rancagua, Chile. I also co-supervise Master's students working on related topics, including <a href="https://nicolas-carrasco-dev.github.io/">Nicolas Carrasco</a>, with whom I am currently developing work on event-based eye-tracking.
+
+            </p>
+
+            <div class="gap-lg"></div>
+
+            <!-- RESEARCH HIGHLIGHTS -->
+            <h1 style="display: flex; justify-content: space-between; align-items: center;">
+                <span>Research Highlights</span>
+                <a href="/bibtex/" id="open-bibtex-modal" class="button" style="font-size: 11px; margin: 0;"><i
+                        class="fa fa-code"></i> BibTeX
+                    References</a>
+            </h1>
+            <table style="margin-top:-12px;">
+                <tbody>
+                  
+                    <tr class="highlight-row">
+                        <!-- Teaser -->
+                        <td style="text-align: center;">
+                            <div class="image-container">
+                                <a href="https://github.com/ev-latam/event-face-liveness.git">
+                                    <picture>
+                                        <source srcset="/media/FG_figure.webp" type="image/webp">
+                                        <img class="image-thumbnail" src="/media/FG_figure.pdf?v=2026-08-17"
+                                            alt="Teaser" loading="lazy" style="width:100%;height:auto;">
+                                    </picture>
+                                </a>
+                            </div>
+                            <div class="image-container">
+                                <a href="https://github.com/ev-latam/event-face-liveness.git">
+                                    <picture>
+                                        <source srcset="/media/fg_cover.webp" type="image/webp">
+                                        <img class="image-thumbnail" src="/media/fg_cover.webp"
+                                            alt="Teaser" loading="lazy" style="width:70%;height:auto;">
+                                    </picture>
+                                </a>
+                            </div>
+                        </td>
+                        <!-- TITLE AND INFO -->
+                        <td>
+                            <div id="indexWorkText">
+                                <!-- Title + Link -->
+                                <b><a href="https://github.com/ev-latam/event-face-liveness.git">Event-based Liveness Detection using Temporal Ocular Dynamics: An Exploratory Approach</a></b>
+                                <br>
+                                <a href="https://megc2026.github.io/workshop.html">FG 2026, FME Workshop (Oral)</a>
+                                <br>
+                                <a href="https://arxiv.org/pdf/2604.26285" class="button">PAPER <i
+                                        class="ai ai-arxiv"></i><span id="cites-transfira"></span></a>
+                                <a href="https://github.com/ev-latam/event-face-liveness.git" class="button">CODE <i
+                                        class="fa-brands fa-github"></i></a>
+                                <div class="spacer"></div>
+
+                                <!-- Description -->
+                                <p>
+                                    We explore event cameras as an alternative sensing modality for liveness detection based on temporal blink and saccade dynamics. Replay attacks cannot faithfully reproduce these dynamics due to temporal resampling and display artifacts, leading to distinctive spatio-temporal patterns in the event domain.
+                                    We design a data collection protocol to extend RGBE-Gaze with replay-attack recordings, yielding an event-based fake counterpart for liveness detection. Our results show that event-based representations enable reliable discrimination between genuine and replayed sequences, achieving up to 95.37% top-1 accuracy with a spiking convolutional neural network. 
+                                </p>    
+
+                                <div class="spacer"></div>
+
+                                <!-- Collaborators -->
+                                <strong>Nicolas Mastropasqua</strong>,
+                                <a href="https://ibugueno.github.io/">Ignacio Bugueno-Cordova</a>,
+                                <a href="https://rodrigo.verschae.org/">Rodrigo Verschae</a>,
+                                <a href="https://scholar.google.com/citations?hl=es&user=1Yv2P6oAAAAJ">Daniel Acevedo</a>,
+                                <a href="https://scholar.google.com/citations?user=bMnUgmcAAAAJ&hl">Pablo Negri</a>,                    
+                            </div>
+                        </td>
+                    </tr>
+
+                     <tr class="highlight-row">
+                        <!-- Teaser -->
+                        <td style="text-align: center;">
+                            <div class="image-container">
+                                <a href="https://github.com/ev-latam/event-face-liveness.git">
+                                    <picture>
+                                        <source srcset="/media/main_nevi.webp" type="image/webp">
+                                        <img class="image-thumbnail" src="/media/main_nevi.webp"
+                                            alt="Teaser" loading="lazy" style="width:100%;height:auto;">
+                                    </picture>
+                                </a>
+                            </div>
+                        </td>
+                        <!-- TITLE AND INFO -->
+                        <td>
+                            <div id="indexWorkText">
+                                <!-- Title + Link -->
+                                <b>Exploring Spatial-Temporal Dynamics in Event-based Facial Micro-Expression Analysis</b>
+                                <br>
+                                <a href="https://sites.google.com/view/nevi-2025/">ICCV 2025, NeVi Workshop</a>
+                                <br>
+                                <a href="https://arxiv.org/abs/2508.11988" class="button">PAPER <i
+                                        class="ai ai-arxiv"></i></a>
+                             
+                                <div class="spacer"></div>
+
+                                <!-- Description -->
+                                <p>
+                                
+In this work, we introduce a novel, preliminary multi-resolution and multi-modal micro-expression dataset recorded with synchronized RGB and event cameras under variable lighting conditions. Action Unit classification using Spiking Neural Networks achieves 51.23 accuracy with events against 23.12 with RGB. We also perform frame reconstruction using Conditional Variational Autoencoders, achieving SSIM = 0.8513 and PSNR = 26.89 dB with high-resolution event input.
+                                </p>    
+
+                                <div class="spacer"></div>
+
+                                <!-- Collaborators -->
+                                <strong>Nicolas Mastropasqua*</strong>,
+                                <a href="https://ibugueno.github.io/">Ignacio Bugueno-Cordova*</a>,
+                                <a href="https://rodrigo.verschae.org/">Rodrigo Verschae</a>,
+                                <a href="https://scholar.google.com/citations?hl=es&user=1Yv2P6oAAAAJ">Daniel Acevedo</a>,
+                                <a href="https://scholar.google.com/citations?user=bMnUgmcAAAAJ&hl">Pablo Negri</a>, 
+                                <a href="https://scholar.google.com/citations?user=RAmWudUAAAAJ&hl=es">Maria Elena Buemi</a>, 
+
+                            </div>
+                        </td>
+                    </tr>
+
+
+                     <tr class="highlight-row">
+                        <!-- Teaser -->
+                        <td style="text-align: center;">
+                            <div class="image-container">
+                                    <picture>
+                                        <source srcset="/media/icprs_cover.webp" type="image/webp">
+                                        <img class="image-thumbnail" src="/media/icprs_cover.webp"
+                                            alt="Teaser" loading="lazy" style="width:100%;height:auto;">
+                                    </picture>
+                            </div>
+                        </td>
+                        <!-- TITLE AND INFO -->
+                        <td>
+                            <div id="indexWorkText">
+                                <!-- Title + Link -->
+                                <b>Event-based facial microexpression analysis using Spiking Neural Networks</b>
+                                <br>
+                                ICPRS 2025 (oral)
+                                <br>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/11302823" class="button">PAPER</a>
+                             
+                                <div class="spacer"></div>
+
+                                <!-- Description -->
+                                <p>
+                                    We introduce a preliminary multi-modal, multi-resolution dataset of RGB and event data under mixed lighting conditions and posed Action Units. We propose an exploration of Spiking Neural Networks trained with surrogate gradient descent to learn spatial-temporal dynamics for the task of Action Unit recognition. Additionaly, we explore the use of event-based facial dynamics of facial expressions to perform Facial Recognition in on our dataset and the NEFER dataset both containing a relatively small number of subjects.   
+                                </p>    
+
+                                <div class="spacer"></div>
+
+                                <!-- Collaborators -->
+                                <strong>Nicolas Mastropasqua*</strong>,
+                                <a href="https://ibugueno.github.io/">Ignacio Bugueno-Cordova*</a>,
+                                <a href="https://rodrigo.verschae.org/">Rodrigo Verschae</a>,
+                                <a href="https://scholar.google.com/citations?hl=es&user=1Yv2P6oAAAAJ">Daniel Acevedo</a>,
+                                <a href="https://scholar.google.com/citations?user=bMnUgmcAAAAJ&hl">Pablo Negri</a>, 
+                                <a href="https://scholar.google.com/citations?user=RAmWudUAAAAJ&hl=es">Maria Elena Buemi</a>, 
+
+                            </div>
+                        </td>
+                    </tr>
+
+                    
+
+
+                </tbody>
+            </table>
+
+            <p style="margin-top: -3em; margin-bottom: 3em;">
+                * denotes equal contribution.
+            </p>
+
+     
+
+            <!-- RESEARCH HIGHLIGHTS -->
+        
+                </tbody>
+            </table>
+        
+
+
+        </section>
+
+        <!-- FOOTER -->
+        <div data-component="footer"></div>
+    </div>
+
+    <!-- BIBTEX MODAL -->
+    <div id="bibtex-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>BibTeX References</h2>
+                <div class="modal-actions">
+                    <button class="copy-code-btn" id="modal-copy-btn">
+                        <i class="fa fa-copy"></i>
+                        <span class="btn-text">Copy</span>
+                    </button>
+                    <button class="copy-code-btn" id="modal-download-btn">
+                        <i class="fa fa-download"></i>
+                        <span class="btn-text">Download</span>
+                    </button>
+                    <button class="close-modal-btn">
+                        <i class="fa fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-bibtex-container">
+                <pre class="bibtex-code" id="modal-bibtex-content">
+@inproceedings{mastropasqua2026event,
+title={Event-based Liveness Detection using Temporal Ocular Dynamics: An Exploratory Approach},
+author={Mastropasqua, Nicolas and Bugueno-Cordova, Ignacio and Verschae, Rodrigo and Acevedo, Daniel and Negri, Pablo},
+booktitle={2026 IEEE 20th International Conference on Automatic Face and Gesture Recognition (FG)},
+pages={1--9},
+year={2026},
+organization={IEEE}
+}
+
+@inproceedings{mastropasqua2025exploring,
+  title={Exploring spatial-temporal dynamics in event-based facial micro-expression analysis},
+  author={Mastropasqua, Nicolas and Bugueno-Cordova, Ignacio and Verschae, Rodrigo and Acevedo, Daniel and Negri, Pablo and Buemi, Maria Elena},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4723--4732},
+  year={2025}
+}
+
+@INPROCEEDINGS{11302823,
+  title={Event-based facial microexpression analysis using Spiking Neural Networks}, 
+  author={Mastropasqua, Nicolas and Bugueno-Cordova, Ignacio and Verschae, Rodrigo and Acevedo, Daniel and Negri, Pablo and Buemi, Maria E.},
+  booktitle={2025 15th IEEE International Conference on Pattern Recognition Systems (ICPRS)}, 
+  year={2025},
+  pages={1-7},
+}
+</pre>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load modal script -->
+    <script src="/static/js/bibtex-modal.js?v=2026-08-17"></script>
+
+    <!-- Load components immediately for faster rendering -->
+    <script src="/static/js/components.js?v=2026-08-17"></script>
+</body>
+
+</html>
