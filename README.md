@@ -5,5 +5,6 @@ This website is based on the Allen Tu academic website template, with minimal cu
 Credits
 Template: Allen Tu, adapted from the original template by Gowthami Somepalli.
 
-Maintained by Nicolas Mastropasqua
+Maintained by Nicolas Mastropasqua.
+
 See the <a href="https://github.com/tuallen/tuallen.github.io">original repository</a> for the template and its license.
