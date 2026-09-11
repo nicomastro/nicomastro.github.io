@@ -317,17 +317,15 @@ dt {
 
 /* Stagger reveal — items appear after the rail reaches them.
    nth-child is +1 because JS prepends a sidebar div before the li items. */
-.news-timeline:not(.is-collapsed) li:nth-child(5) { transition-delay: 0.1s; }
-.news-timeline:not(.is-collapsed) li:nth-child(6) { transition-delay: 0.18s; }
-.news-timeline:not(.is-collapsed) li:nth-child(7) { transition-delay: 0.26s; }
-.news-timeline:not(.is-collapsed) li:nth-child(8) { transition-delay: 0.34s; }
-.news-timeline:not(.is-collapsed) li:nth-child(9) { transition-delay: 0.42s; }
+.news-timeline:not(.is-collapsed) li:nth-child(6) { transition-delay: 0.1s; }
+.news-timeline:not(.is-collapsed) li:nth-child(7) { transition-delay: 0.18s; }
+.news-timeline:not(.is-collapsed) li:nth-child(8) { transition-delay: 0.26s; }
+.news-timeline:not(.is-collapsed) li:nth-child(9) { transition-delay: 0.34s; }
 
 /* When collapsing, reverse stagger (last disappears first) */
-.news-timeline.is-collapsed li.news-hidden:nth-child(5) { transition-delay: 0.15s; }
-.news-timeline.is-collapsed li.news-hidden:nth-child(6) { transition-delay: 0.1s; }
-.news-timeline.is-collapsed li.news-hidden:nth-child(7) { transition-delay: 0.05s; }
-.news-timeline.is-collapsed li.news-hidden:nth-child(8) { transition-delay: 0s; }
+.news-timeline.is-collapsed li.news-hidden:nth-child(6) { transition-delay: 0.15s; }
+.news-timeline.is-collapsed li.news-hidden:nth-child(7) { transition-delay: 0.1s; }
+.news-timeline.is-collapsed li.news-hidden:nth-child(8) { transition-delay: 0.05s; }
 .news-timeline.is-collapsed li.news-hidden:nth-child(9) { transition-delay: 0s; }
 
 /* Timeline node — centered under the news heading icon */
@@ -396,8 +394,8 @@ dt {
   transform: translateY(0.4px);
 }
 
-/* Pre-JS collapse: hide items 4+ instantly to prevent flash of full list */
-.news-timeline:not(.js-ready) li:nth-child(n+4) {
+/* Pre-JS collapse: hide items 5+ instantly to prevent flash of full list */
+.news-timeline:not(.js-ready) li:nth-child(n+5) {
   display: none;
 }
 

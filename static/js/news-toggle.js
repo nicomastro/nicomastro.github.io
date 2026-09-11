@@ -1,6 +1,6 @@
 /* ---- News timeline: collapse/expand with animated dots sidebar ---- */
 document.addEventListener("DOMContentLoaded", () => {
-    const VISIBLE_COUNT = 3;
+    const VISIBLE_COUNT = 4;
 
     const list = document.querySelector(".news-timeline");
     if (!list) return;
@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (i >= VISIBLE_COUNT) li.classList.add("news-hidden");
     });
 
-    // The third item (last visible when collapsed) gets the down-arrow
-    const thirdItem = items[VISIBLE_COUNT - 1];
-    thirdItem.classList.add("news-arrow-down");
+    // The fourth item (last visible when collapsed) gets the down-arrow
+    const fourthItem = items[VISIBLE_COUNT - 1];
+    fourthItem.classList.add("news-arrow-down");
 
     // The last item gets the up-arrow when expanded
     const lastItem = items[items.length - 1];
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // padding-bottom comes from a stylesheet and only changes with the media
     // query, so read it once instead of on every frame of the animation — this
     // runs 60x/s while the list expands and getComputedStyle forces a recalc.
-    let itemPaddingBottom = parseFloat(getComputedStyle(thirdItem).paddingBottom);
+    let itemPaddingBottom = parseFloat(getComputedStyle(fourthItem).paddingBottom);
 
     // Dot centre = li.offsetTop + half the date's line box (see the CSS, which
     // derives the same offset). The rail's CSS `top` is that same value, so the
@@ -50,10 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
             list.style.setProperty("--rail-height", `${height}px`);
             list.style.setProperty("--rail-bg", "var(--border-color)");
         } else {
-            // Rail from first dot, solid to third dot, then fades to the last text baseline.
+            // Rail from first dot, solid to fourth dot, then fades to the last text baseline.
             // Text baseline ≈ li bottom minus padding-bottom minus half-leading.
-            const dotEnd = thirdItem.offsetTop;
-            const textEnd = thirdItem.offsetTop + thirdItem.offsetHeight - itemPaddingBottom;
+            const dotEnd = fourthItem.offsetTop;
+            const textEnd = fourthItem.offsetTop + fourthItem.offsetHeight - itemPaddingBottom;
             const solidStop = dotEnd / textEnd * 100;
             list.style.setProperty("--rail-height", `${textEnd}px`);
             list.style.setProperty("--rail-bg",
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Re-read the cached padding here rather than on window resize: this
             // fires for any size change, including the media-query switch that
             // actually alters it, and runs before updateRail uses the value.
-            itemPaddingBottom = parseFloat(getComputedStyle(thirdItem).paddingBottom);
+            itemPaddingBottom = parseFloat(getComputedStyle(fourthItem).paddingBottom);
             updateRail();
         });
     });
@@ -88,12 +88,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (expanded) {
             list.classList.remove("is-collapsed");
-            thirdItem.classList.remove("news-arrow-down");
+            fourthItem.classList.remove("news-arrow-down");
             lastItem.classList.add("news-arrow-up");
             sidebarClick.setAttribute("aria-label", "Show fewer news items");
         } else {
             lastItem.classList.remove("news-arrow-up");
-            thirdItem.classList.add("news-arrow-down");
+            fourthItem.classList.add("news-arrow-down");
             list.classList.add("is-collapsed");
             sidebarClick.setAttribute("aria-label", `Show ${hiddenCount} more news items`);
         }
